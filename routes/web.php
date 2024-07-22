@@ -15,3 +15,4 @@ use App\Http\Controllers\AnimalController;
 */
 
 Route::get('/', [AnimalController::class, 'index']);
+Route::get('/show/{animal}', [AnimalController::class, 'show']);

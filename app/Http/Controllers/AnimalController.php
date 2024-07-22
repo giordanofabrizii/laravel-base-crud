@@ -14,7 +14,6 @@ class AnimalController extends Controller
     {
         //
         $animals = Animal::all();
-
         return view('pages.welcome',compact('animals'));
     }
 
@@ -40,6 +39,7 @@ class AnimalController extends Controller
     public function show(Animal $animal)
     {
         //
+        return view('pages.show',compact('animal'));
     }
 
     /**

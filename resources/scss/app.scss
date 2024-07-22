@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background-color: magenta;
+
+    section{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 90rem;
+        margin: 0 auto;
+
+        article{
+            width: calc((100% / 3) - 2rem);
+            margin: 1rem;
+            border: 1px solid #ababab;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 20rem;
+
+            h1{
+                padding: .5rem;
+                font-size: 2rem;
+                background-color: white;
+            }
+
+            img{
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.show-animal{
+    @import './show';
+}
