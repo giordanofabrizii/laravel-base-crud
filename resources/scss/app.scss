@@ -23,16 +23,15 @@ main{
 
         article{
             width: calc((100% / 3) - 2rem);
+            height: 20rem;
             margin: 1rem;
-            border: 1px solid #ababab;
             border-radius: 12px;
             overflow: hidden;
-            height: 20rem;
 
             h1{
-                padding: .5rem;
-                font-size: 2rem;
                 background-color: white;
+                font-size: 2rem;
+                padding: .5rem;
             }
 
             img{

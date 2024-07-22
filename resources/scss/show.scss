@@ -1,1 +1,30 @@
+article{
+    display: flex;
+    flex-direction: row;
+    height: 30rem;
+    width: 100%;
+    background-color: white;
 
+    img{
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .text{
+        padding: .5rem;
+
+        >*{
+            padding: 0;
+            margin: .5rem 0;
+        }
+
+        span{
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        h4{
+            font-weight: normal;
+        }
+    }
+}
