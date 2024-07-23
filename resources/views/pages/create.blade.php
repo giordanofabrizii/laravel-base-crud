@@ -14,35 +14,35 @@
             </div>
 
             <div>
-                <label for="nome">Specie</label>
+                <label for="specie">Specie</label>
                 <input type="text" id="specie" name="specie">
             </div>
             <div>
-                <label for="nome">Razza</label>
-                <input type="text" id="Razza" name="Razza">
+                <label for="razza">Razza</label>
+                <input type="text" id="razza" name="razza">
             </div>
             <div>
-                <label for="nome">Et&agrave;</label>
+                <label for="eta">Et&agrave;</label>
                 <input type="text" id="eta" name="eta">
             </div>
             <div>
-                <label for="nome">Sesso</label>
+                <label for="sesso">Sesso</label>
                 <input type="text" id="sesso" name="sesso">
             </div>
             <div>
-                <label for="nome">Peso (kg)</label>
+                <label for="peso">Peso (kg)</label>
                 <input type="text" id="peso" name="peso">
             </div>
             <div>
-                <label for="nome">Altezza (cm)</label>
+                <label for="altezza">Altezza (cm)</label>
                 <input type="text" id="altezza" name="altezza">
             </div>
             <div>
-                <label for="nome">Url Immagine</label>
+                <label for="url_img">Url Immagine</label>
                 <input type="text" id="url_img" name="url_img">
             </div>
             <div>
-                <label for="nome">Extra Info</label>
+                <label for="info">Extra Info</label>
                 <input type="text" id="info" name="info">
             </div>
 

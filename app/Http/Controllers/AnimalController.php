@@ -31,8 +31,14 @@ class AnimalController extends Controller
      */
     public function store(Request $request)
     {
-        // store
-        @dd($request->all());
+        // add a new animal
+        $data = $request->all();
+
+        $newAnimal = new Animal($data);
+
+        $newAnimal->save();
+
+        return redirect()->route('animals.show', $newAnimal);
     }
 
     /**
