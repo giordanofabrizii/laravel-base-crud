@@ -22,7 +22,8 @@ class AnimalController extends Controller
      */
     public function create()
     {
-        //
+        // create new animal
+        return view('pages.create');
     }
 
     /**
@@ -30,7 +31,8 @@ class AnimalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // store
+        @dd($request->all());
     }
 
     /**
