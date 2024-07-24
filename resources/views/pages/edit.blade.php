@@ -5,7 +5,7 @@
 @section('main-content')
 
     <section class="form">
-        <form action="{{ route('animals.update', $animal) }}" method="POST">
+        <form action="{{ route('animal.update', $animal) }}" method="POST">
             @method('PUT') {{-- to change method --}}
             @csrf
 
@@ -47,7 +47,7 @@
                 <input type="text" id="info" name="info" value="{{ $animal->info }}">
             </div>
 
-            <button type="submit">Send</button>
+            <button type="submit">Update</button>
         </form>
     </section>
 
