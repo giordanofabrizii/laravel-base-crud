@@ -55,7 +55,8 @@ class AnimalController extends Controller
      */
     public function edit(Animal $animal)
     {
-        //
+        // edit single animal
+        return view('pages.edit',compact('animal'));
     }
 
     /**

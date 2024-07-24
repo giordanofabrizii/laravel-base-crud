@@ -18,6 +18,7 @@
                 </div>
                 <h4>{{ $animal->info }}</h4>
             </div>
+            <a class="button" href="/edit/{{$animal->id}}">Edit</a>
         </article>
     </section>
 
