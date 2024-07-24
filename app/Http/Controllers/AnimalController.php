@@ -78,6 +78,11 @@ class AnimalController extends Controller
      */
     public function destroy(Animal $animal)
     {
-        //
+        // delete the animal
+
+        $animal->delete();
+
+        return redirect()->route('animals.index');
+
     }
 }

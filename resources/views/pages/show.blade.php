@@ -19,6 +19,12 @@
                 <h4>{{ $animal->info }}</h4>
             </div>
             <a class="button" href="/edit/{{$animal->id}}">Edit</a>
+            <form action="{{ route('animal.destroy', $animal) }}" method="POST">
+                @method('DELETE')
+                @csrf
+
+                <button type="submit">Delete</button>
+            </form>
         </article>
     </section>
 

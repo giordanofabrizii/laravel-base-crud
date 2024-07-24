@@ -20,3 +20,4 @@ Route::get('/create', [AnimalController::class, 'create'])->name('animals.create
 Route::get('/show/{animal}', [AnimalController::class, 'show'])->name('animals.show');
 Route::get('/edit/{animal}', [AnimalController::class, 'edit'])->name('animal.edit');
 Route::put('/edit/{animal}', [AnimalController::class, 'update'])->name('animal.update');
+Route::delete('/show/{animal}', [AnimalController::class, 'destroy'])->name('animal.destroy');
