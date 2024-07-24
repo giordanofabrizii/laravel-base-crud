@@ -2,7 +2,10 @@ article{
     display: flex;
     flex-direction: row;
     height: 30rem;
-    width: 100%;
+    width: 90rem;
+    margin: 1rem auto;
+    border-radius: 16px;
+    overflow: hidden;
     background-color: white;
 
     img{
