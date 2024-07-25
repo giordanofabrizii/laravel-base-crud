@@ -3,6 +3,15 @@
 @section('page-name','Create New Animal')
 
 @section('main-content')
+    <div class="errors">
+        @if($errors->any())
+            <div>
+                @foreach ($errors->all() as $error)
+                    <p>{{ $error }}</p>
+                @endforeach
+            </div>
+        @endif
+    </div>
 
     <section class="form">
         <form action="{{ route('animals.store') }}" method="POST">

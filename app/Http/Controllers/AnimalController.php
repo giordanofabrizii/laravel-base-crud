@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Animal;
+use App\Http\Requests\StoreAnimalRequest;
 use Illuminate\Http\Request;
 
 class AnimalController extends Controller
@@ -29,10 +30,10 @@ class AnimalController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(StoreAnimalRequest $request)
     {
         // add a new animal
-        $data = $request->all();
+        $data = $request->validated();
 
         $newAnimal = new Animal($data);
 
