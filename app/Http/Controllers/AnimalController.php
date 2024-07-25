@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Animal;
 use App\Http\Requests\StoreAnimalRequest;
+use App\Http\Requests\UpdateAnimalRequest;
 use Illuminate\Http\Request;
 
 class AnimalController extends Controller
@@ -63,11 +64,11 @@ class AnimalController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Animal $animal)
+    public function update(UpdateAnimalRequest $request, Animal $animal)
     {
         // update aniimal data
 
-        $data = $request->all();
+        $data = $request->validated();
 
         $animal->update($data);
 
