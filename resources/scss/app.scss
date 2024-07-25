@@ -9,6 +9,14 @@ a{
     color: black;
 }
 
+button, .button{
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: .5rem;
+    padding: .5rem .7rem;
+    background-color: white;
+}
+
 main{
     width: 100vw;
     height: 100vh;
@@ -40,6 +48,7 @@ main{
                 margin: 1rem;
                 border-radius: 12px;
                 overflow: hidden;
+                background-color: white;
 
                 h1{
                     background-color: white;
@@ -51,7 +60,7 @@ main{
                     width: 100%;
                     object-fit: cover;
                     object-position: top;
-                    height: 100%;
+                    height: calc(100% - 7rem);
                 }
             }
         }

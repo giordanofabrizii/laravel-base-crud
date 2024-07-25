@@ -87,4 +87,23 @@ class AnimalController extends Controller
         return redirect()->route('animals.index');
 
     }
+
+
+    public function deleted(Animal $animal)
+    {
+
+        // get deleted animals
+        $animals = Animal::onlyTrashed()->get();
+
+        return view('pages.delete',compact('animals'));
+
+    }
+
+    public function restore(string $id)
+    {
+        $animal = Animal::onlyTrashed()->findOrFail($id);
+        $animal->restore();
+
+        return redirect()->route('animals.index')->with('message_restore', $animal->nome . " è stato ripristinato con successo!!");
+    }
 }
