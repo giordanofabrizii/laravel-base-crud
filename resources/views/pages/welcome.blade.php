@@ -6,6 +6,7 @@
 
     <div class="container">
         <a href="/create">Add new animal</a>
+        <a href="/deleted">Bin</a>
 
         <section>
             @foreach ($animals as $animal)

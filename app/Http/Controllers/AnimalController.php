@@ -104,6 +104,6 @@ class AnimalController extends Controller
         $animal = Animal::onlyTrashed()->findOrFail($id);
         $animal->restore();
 
-        return redirect()->route('animals.index')->with('message_restore', $animal->nome . " è stato ripristinato con successo!!");
+        return redirect()->route('animals.index');
     }
 }
